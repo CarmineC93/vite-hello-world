@@ -1,11 +1,28 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+
+import  AppTitle from './components/AppTitle.vue';
+import  AppHero from './components/AppHero.vue';
+
+export default {
+  data() {
+    return {
+      greeting: "Ciao mondo!"
+    }
+  },
+  components: {
+    AppTitle,
+    AppHero
+  },
+}
+
 </script>
 
 <template>
-  
+  <h1>{{ greeting }}</h1>
+  <section>
+    <AppTitle />
+    <AppHero />
+  </section>
 </template>
 
 <style scoped>

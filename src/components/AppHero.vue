@@ -1,15 +1,15 @@
 <script>
-export  {
+export default {
     data() {
         return {
-            title: "La mia prima app con Vite!"
+            jumboTex: "Questo è un jumbotron"
         }
     }
 }
 </script>
 
 <template>
-    <div class="jumbo">{{title}}</div>
+    <div class="jumbo">{{jumboTex}}</div>
 </template>
 
 <style scoped>
@@ -18,6 +18,7 @@ export  {
     width: 100%;
     height: 200px;
     background-color: beige;
+    color: red;
 }
 
 </style>
